@@ -1,0 +1,26 @@
+{% extends "layout.html" %} {% block content %}
+
+<br>
+<br>
+<h2 style="margin-bottom: 25px;">{{ title }}</h2>
+
+
+
+{% if result == 'Доброкачественное новообразование' %}
+<p style="color: forestgreen; font-size: 25px;"> {{result}} </strong>
+</p>
+{% else %}
+<p style="color: brown;  font-size: 25px"> {{result}} </strong>
+</p>
+<p>Необходимо в срочном порядке обратиться к специалисту!</p>
+{% endif %}
+
+
+<br>
+<figure class="figure">
+    <img src="\static\img\image.jpg" class="figure-img img-fluid rounded" alt="Загруженное изображение">
+    <figcaption class="figure-caption text-center">Загруженное изображение</figcaption>
+</figure>
+
+
+{% endblock %}

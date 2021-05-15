@@ -1,0 +1,23 @@
+{% extends "layout.html" %} {% block content %}
+<br>
+<br>
+<h2 style="margin-bottom: 25px;">{{ title }}</h2>
+
+<form method="post" action="/add_img" enctype="multipart/form-data" style="width: 45%;">
+
+    <div class="form-group">
+        <label for="exampleFormControlFile1">Выберите изображение новообразования</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="file">
+    </div>
+
+    <br>
+
+
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Показать результат</button>
+    </div>
+</form>
+
+
+{% endblock %}

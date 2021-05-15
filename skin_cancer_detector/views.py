@@ -17,7 +17,7 @@ import os
 
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-UPLOAD_FOLDER = dir_path + '\static\img'
+UPLOAD_FOLDER = dir_path + '/static/img'
 ALLOWED_EXTENSIONS = set(['jpg'])
 
 

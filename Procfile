@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT server:skin_cancer_detector
+web: gunicorn --bind 0.0.0.0:$PORT server:app

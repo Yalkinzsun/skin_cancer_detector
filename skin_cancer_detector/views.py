@@ -72,7 +72,7 @@ def add_img():
 
 @app.route('/show_result', methods=['GET', 'POST'])
 def show_result():
-    path = UPLOAD_FOLDER + '\image.jpg'
+    path = UPLOAD_FOLDER + '/image.jpg'
     return render_template(
         'show_result.html',
         title = 'Результат',

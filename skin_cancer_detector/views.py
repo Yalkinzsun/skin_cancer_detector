@@ -12,7 +12,6 @@ import torchvision, torch
 import numpy as np
 import torchvision.models as models
 from skin_cancer_detector import app
-import sqlite3
 import os
 
 
